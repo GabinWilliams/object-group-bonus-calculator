@@ -70,8 +70,11 @@ function bonusCalculator(employee) {
     bonusPercentage += 10;
   }
 
-  if (bonusPercentage >= 13) {
+  if(bonusPercentage >= 13) {
     bonusPercentage = 13;
+  }
+  else if(bonusPercentage < 0) {
+    bonusPercentage = 0;
   }
 
   let totalBonus = Math.round(
