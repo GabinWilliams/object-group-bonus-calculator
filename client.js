@@ -101,9 +101,9 @@ function renderDom() {
       `<tr> 
           <td>${i + 1}</td>
           <td>${employee.name}</td>
-          <td>${employee.bonusPercentage}</td>
-          <td>${employee.totalCompensation}</td>
-          <td>${employee.totalBonus}</td>
+          <td>${employee.bonusPercentage}%</td>
+          <td>$${employee.totalCompensation}</td>
+          <td>$${employee.totalBonus}</td>
       </tr>`
     );
   } // end for loop
